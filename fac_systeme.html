@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>systeme de la fac</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">Guide de l'Étudiant</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">À propos</a></li>
+          <li><a href="preparatifs_arriver.html">Préparatifs</a></li>
+          <li>
+            <a href="taches_administratives.html">Tâches administratives</a>
+          </li>
+          <li>
+            <a href="documents_recommander.html">Démarches recommandées</a>
+          </li>
+          <li><a href="logement.html">Logement</a></li>
+          <li><a href="magasin.html">Courses</a></li>
+          <li>
+            <a href="fac_systeme.html" class="active">Systeme de la fac</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="systemeFac">
+      <h1>Systeme de la fac</h1>
+      <p>
+        Bienvenue sur le système de la fac! Ici nous allons aborder et vous
+        presentez les différents systemes de votre fac.
+      </p>
+      <h3>Le systeme modulaire</h3>
+      <p>
+        Le systeme modulaire stipule que les etudiants doivent au moins obtenir
+        10/20 de moyenne minimum dans chaque semestre mais aussi dans chaque
+        module obligatoire pour valide l'année sinon vous pouvez refaire l'année
+        juste à cause d'un seul module
+      </p>
+      <p>
+        Ma fac par exemple utilise ce systeme donc travaillez dans tous les
+        modules sans exeptions
+      </p>
+      <h3>Le systeme Compensatoire</h3>
+      <p>
+        Ce systeme est particuliérement bon je trouve et meme le meilleur mais
+        chaqu'un son avis , donc ce systeme se base uniquement sur la moyennes
+        des semestres diviser par deux si vous avez 10 ou plus vous passez
+      </p>
+    </section>
+    <section class="conseil">
+      <h1>Conseil</h1>
+      <p>
+        Je vous conseille vivement de demander a votre professeur ou a votre
+        responsable académique pour obtenir des informations supplémentaires sur
+        le système de la fac et sur son systeme pour ne pas avoir de mauvaise
+        surprise.
+      </p>
+    </section>
+    <footer class="site-footer floor--3">
+      <p>
+        Guide de l'Étudiant — informations utiles pour réussir votre
+        installation en France.
+      </p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- referencement SEO -->
+    <title>Guide de l'Étudiant</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">Guide de l'Étudiant</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="presentation.html">À propos</a></li>
+          <li><a href="preparatifs_arriver.html">Préparatifs</a></li>
+          <li>
+            <a href="taches_administratives.html">Tâches administratives</a>
+          </li>
+          <li>
+            <a href="documents_recommander.html">Démarches recommandées</a>
+          </li>
+          <li><a href="logement.html">Logement</a></li>
+          <li><a href="magasin.html">Courses</a></li>
+          <li><a href="fac_systeme.html">Systeme de la fac</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentation">
+      <h1>Guide de l'Étudiant</h1>
+      <h3>À quoi sert ce site ?</h3>
+      <p class="paragraphe">
+        Vous êtes étudiant en France, ou étudiant européen à la recherche d'un
+        logement, et vous êtes perdu ? Ce site regroupe tout ce dont vous avez
+        besoin pour bien démarrer : les démarches administratives, les documents
+        recommandés dès votre arrivée, et la recherche d'un logement étudiant,
+        privé ou social.
+      </p>
+    </section>
+
+    <section class="quick-links">
+      <a class="quick-card" href="preparatifs_arriver.html">
+        <i class="bi bi-clipboard-check"></i>
+        <h2>Préparatifs à l'arrivée</h2>
+        <p>Les premières choses à faire dès votre arrivée en France.</p>
+      </a>
+      <a class="quick-card" href="taches_administratives.html">
+        <i class="bi bi-person-vcard"></i>
+        <h2>Tâches administratives</h2>
+        <p>Titre de séjour, assurance maladie, carte consulaire, CAF...</p>
+      </a>
+      <a class="quick-card" href="documents_recommander.html">
+        <i class="bi bi-bus-front"></i>
+        <h2>Démarches recommandées</h2>
+        <p>Carte de transport public et autres démarches à anticiper.</p>
+      </a>
+      <a class="quick-card" href="logement.html">
+        <i class="bi bi-house-heart"></i>
+        <h2>Logement étudiant</h2>
+        <p>Logement social ou privé, pour étudiants français et européens.</p>
+      </a>
+      <a class="quick-card" href="magasin.html">
+        <i class="bi bi-shop"></i>
+        <h2>Section Courses</h2>
+        <p>Classement des magasin pour faire ces courses.</p>
+      </a>
+      <a class="quick-card" href="fac_systeme.html">
+        <i class="bi bi-shop"></i>
+        <h2>Systeme de la fac</h2>
+        <p>Comprendre la difference de systemes que les facs emploient.</p>
+      </a>
+    </section>
+    <footer class="site-footer">
+      <p>
+        Guide de l'Étudiant — informations utiles pour réussir votre
+        installation en France.
+      </p>
+      <p style="display: none">fais par Foudil Belkacemi</p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>

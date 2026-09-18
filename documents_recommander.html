@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Démarches recommandées — Guide de l'Étudiant</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">Guide de l'Étudiant</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">À propos</a></li>
+          <li><a href="preparatifs_arriver.html">Préparatifs</a></li>
+          <li>
+            <a href="taches_administratives.html">Tâches administratives</a>
+          </li>
+          <li>
+            <a href="documents_recommander.html" class="active"
+              >Démarches recommandées</a
+            >
+          </li>
+          <li><a href="logement.html">Logement</a></li>
+          <li><a href="magasin.html">Courses</a></li>
+          <li><a href="fac_systeme.html">Systeme de la fac</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="parent">
+      <h1>Démarches recommandées</h1>
+      <section class="top-container">
+        <div class="container">
+          <div class="demarche-grid">
+            <div class="demarche-content">
+              <div class="title">
+                <h2>Carte de transport public</h2>
+                <i class="bi bi-bus-front"></i>
+              </div>
+              <p>
+                -- Je vous conseille de la faire dès votre arrivée en France,
+                car elle ne demande pas de documents comme le titre de séjour ou
+                l'avis favorable.
+              </p>
+              <p>Documents généralement demandés :</p>
+              <ul>
+                <li>Visa</li>
+                <li>Justificatif d'identité (passeport)</li>
+                <li>Une photo d'identité récente</li>
+              </ul>
+              <p>
+                La démarche dépend de votre ville : par exemple à Paris, le Pass
+                Navigo se demande sur le site
+                <a href="https://www.iledefrance-mobilites.fr/"
+                  >Île-de-France Mobilités</a
+                >. Renseignez-vous auprès du réseau de transport local de votre
+                ville d'études.
+              </p>
+            </div>
+            <div class="demarche-video">
+              <div class="video-wrapper">
+                <div class="video-placeholder">
+                  <p>
+                    Vidéo à venir — ajoutez ici le lien de votre vidéo
+                    explicative.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer floor--3">
+      <p>
+        Guide de l'Étudiant — informations utiles pour réussir votre
+        installation en France.
+      </p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>

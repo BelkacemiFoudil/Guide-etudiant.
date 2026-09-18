@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Courses</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">Guide de l'Étudiant</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">À propos</a></li>
+          <li><a href="preparatifs_arriver.html">Préparatifs</a></li>
+          <li>
+            <a href="taches_administratives.html">Tâches administratives</a>
+          </li>
+          <li>
+            <a href="documents_recommander.html">Démarches recommandées</a>
+          </li>
+          <li><a href="logement.html">Logement</a></li>
+          <li><a href="magasin.html" class="active">Courses</a></li>
+          <li><a href="fac_systeme.html">Systeme de la fac</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="courses">
+      <h1>Section Courses</h1>
+      <p>
+        Dans cette section nous allons vous listez les meilleurs magasins pour
+        faire vos courses en prenant en compte la qualité prix.
+      </p>
+    </section>
+    <section class="tarifs">
+      <h1>Classement:</h1>
+      <div class="magasin">
+        <ul>
+          <li class="interface">
+            <h1>1. Intermarche</h1>
+            <img src="images/Intermarché.webp" alt="intermarche" />
+
+            <ul class="details">
+              <li>Qualité : bons rayons à la coupe (boucherie, poissonnerie, fromage, charcuterie)</li>
+              <li>Prix : 2e enseigne la moins chère de France, devant Hyper U (UFC-Que Choisir 2026)</li>
+              <li>Fidélité : carte gratuite, 5% dès 3 produits achetés, 10% dès la 4e visite du mois</li>
+              <li>Drive : mêmes avantages fidélité applicables sur le Drive</li>
+              <li>Produits locaux : large choix de produits régionaux et marques propres (Pâturages, Paquito...)</li>
+            </ul>
+          </li>
+          <li class="interface">
+            <h1>2. leclerc</h1>
+            <img src="images/Leclerc.webp" alt="leclerc" />
+
+            <ul class="details">
+              <li>Prix : élue enseigne la moins chère de France par UFC-Que Choisir (juin 2026)</li>
+              <li>Carburant : plus de 740 stations, prix parmi les plus bas du marché</li>
+              <li>Fidélité : 10% en Tickets E.Leclerc chaque semaine sur un rayon frais au choix</li>
+              <li>Qualité : large choix de grandes marques et gamme bio (Bio Village)</li>
+              <li>Drive : réseau Leclerc Drive parmi les plus développés de France</li>
+            </ul>
+          </li>
+          <li class="interface">
+            <h1>3. Lidl</h1>
+            <img src="images/Lidl.webp" alt="Lidl" />
+
+            <ul class="details">
+              <li>Qualité : ses marques propres battent souvent les grandes marques dans les tests (60 Millions de Consommateurs)</li>
+              <li>Prix : parmi les plus bas du marché, hard-discount historique</li>
+              <li>Satisfaction : élue meilleure chaîne de magasins de l'année 2025 pour la 14e fois, note de 8,7/10</li>
+              <li>Assortiment : 90% de marques distributeur, contrôle qualité poussé</li>
+              <li>Bio et frais : gamme bio et rayon fruits/légumes de plus en plus reconnus</li>
+            </ul>
+          </li>
+          <li class="interface">
+            <h1>4. Systeme U</h1>
+            <img src="images/U.webp" alt="U" />
+
+            <ul class="details">
+              <li>Modèle : coopérative de commerçants indépendants, magasins à taille humaine</li>
+              <li>Produits locaux : rayon dédié aux producteurs régionaux</li>
+              <li>Bio : plus de 2000 références bio supplémentaires ajoutées récemment (Super U Drive)</li>
+              <li>Qualité : bon rapport qualité-prix sur les produits frais</li>
+              <li>Prix : légèrement plus élevés qu'Intermarché mais restent compétitifs</li>
+            </ul>
+          </li>
+          <li class="interface">
+            <h1>5. Auchan</h1>
+            <img src="images/Auchan.webp" alt="auchan" />
+
+            <ul class="details">
+              <li>Difficultés : groupe en grande difficulté financière en 2026, restructuration en cours</li>
+              <li>Cession : jusqu'à 91 supermarchés cédés au groupement Mousquetaires (Intermarché/Netto)</li>
+              <li>Fermetures : 17 magasins sans repreneur, environ 1000 emplois concernés</li>
+              <li>Choix : hypermarchés encore bien fournis avec un large choix de produits</li>
+              <li>Prix : moyens à élevés, l'enseigne peine à rivaliser avec Leclerc ou Intermarché</li>
+            </ul>
+          </li>
+          <li class="interface">
+            <h1>6. Carrefour</h1>
+            <img src="images/Carrefour.webp" alt="carrefour" />
+
+            <div class="raisons">
+              <ul class="details">
+                <li>Qualité : marque Carrefour Bio certifiée agriculture biologique, plus de 500 produits bio à moins de 2€</li>
+                <li>Prix : environ 6,7% plus cher que Leclerc en moyenne (UFC-Que Choisir)</li>
+                <li>Bio : premier vendeur de bio en France, plus de 4700 producteurs partenaires</li>
+                <li>Assortiment : très large choix, nombreux formats (Hyper, Market, City, Express)</li>
+                <li>Marques distributeur : 31% des produits notés A ou B au Nutri-Score</li>
+              </ul>
+            </div>
+          </li>
+          <li class="interface">
+            <h1>7. Monoprix</h1>
+            <img src="images/monoprix-logo.webp" alt="Monoprix" />
+
+            <div class="raisons">
+              <ul class="details">
+                <li>Qualité : produits frais soignés, marques distributeur haut de gamme</li>
+                <li>Prix : parmi les plus élevés de la grande distribution, positionnement premium</li>
+                <li>Emplacement : magasins de centre-ville, pratiques pour la clientèle urbaine</li>
+                <li>Livraison : créneaux très larges (6h-23h, 7j/7), gratuite dès 150€ d'achats</li>
+                <li>Écologie : livraisons assurées par des camionnettes roulant au biogaz</li>
+              </ul>
+                        </li>
+                      </ul>
+            </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <p>
+        Guide de l'Étudiant — informations utiles pour réussir votre
+        installation en France.
+      </p>
+    </footer>
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>

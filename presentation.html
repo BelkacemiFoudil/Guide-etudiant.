@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>À propos — Guide de l'Étudiant</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">Guide de l'Étudiant</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html" class="active">À propos</a></li>
+          <li><a href="preparatifs_arriver.html">Préparatifs</a></li>
+          <li>
+            <a href="taches_administratives.html">Tâches administratives</a>
+          </li>
+          <li>
+            <a href="documents_recommander.html">Démarches recommandées</a>
+          </li>
+          <li><a href="logement.html">Logement</a></li>
+          <li><a href="magasin.html">Courses</a></li>
+          <li><a href="fac_systeme.html">Systeme de la fac</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentation">
+      <h1>Guide de l'Étudiant</h1>
+      <h3>À quoi sert ce site ?</h3>
+      <p class="paragraphe">
+        Vous êtes étudiant en France et vous êtes perdu, vous ne savez pas où
+        chercher des informations sur : comment faire vos papiers
+        administratifs, les meilleurs sites de logement classés par catégories,
+        ou encore les démarches à anticiper dès votre arrivée.
+      </p>
+      <p class="paragraphe">
+        Ce site s'adresse aussi bien aux étudiants étrangers hors Union
+        Européenne qu'aux étudiants européens à la recherche d'un logement
+        étudiant, privé ou social. Il regroupe tout ce dont vous avez besoin
+        pour bien débuter votre nouvelle vie d'étudiant et vous la faciliter.
+      </p>
+    </section>
+
+    <footer class="site-footer floor--2">
+      <p>
+        Guide de l'Étudiant — informations utiles pour réussir votre
+        installation en France.
+      </p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>

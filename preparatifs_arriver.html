@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Préparatifs à l'arrivée — Guide de l'Étudiant</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">Guide de l'Étudiant</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">À propos</a></li>
+          <li>
+            <a href="preparatifs_arriver.html" class="active">Préparatifs</a>
+          </li>
+          <li>
+            <a href="taches_administratives.html">Tâches administratives</a>
+          </li>
+          <li>
+            <a href="documents_recommander.html">Démarches recommandées</a>
+          </li>
+          <li><a href="logement.html">Logement</a></li>
+          <li><a href="magasin.html">Courses</a></li>
+          <li><a href="fac_systeme.html">Systeme de la fac</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="preparatifs">
+      <h1>Que faire dès mon arrivée en France ?</h1>
+      <ul>
+        <li>
+          Acheter une carte SIM (très important pour le reste des démarches).
+        </li>
+        <li>
+          Ouvrir un compte bancaire et récupérer votre RIB (disponible sur
+          l'application de la banque après ouverture du compte).
+        </li>
+        <li>
+          Ouvrir une nouvelle boîte mail dédiée uniquement à vos démarches
+          administratives, pour ne pas vous y perdre.
+        </li>
+        <li>Ranger tous vos documents dans une pochette bien organisée.</li>
+        <li>
+          Scanner l'intégralité de vos documents et les stocker dans le drive de
+          votre boîte mail dédiée, car la plupart des démarches se font
+          désormais en ligne.
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site-footer floor">
+      <p>
+        Guide de l'Étudiant — informations utiles pour réussir votre
+        installation en France.
+      </p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>

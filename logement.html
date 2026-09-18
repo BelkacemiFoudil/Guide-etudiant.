@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Logement étudiant — Guide de l'Étudiant</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">Guide de l'Étudiant</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">À propos</a></li>
+          <li><a href="preparatifs_arriver.html">Préparatifs</a></li>
+          <li>
+            <a href="taches_administratives.html">Tâches administratives</a>
+          </li>
+          <li>
+            <a href="documents_recommander.html">Démarches recommandées</a>
+          </li>
+          <li><a href="logement.html" class="active">Logement</a></li>
+          <li><a href="magasin.html">Courses</a></li>
+          <li><a href="fac_systeme.html">Systeme de la fac</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="parent">
+      <h1>Logement étudiant</h1>
+      <div class="logement-intro">
+        <p class="paragraphe">
+          Que vous soyez étudiant français, étudiant étranger ou étudiant
+          européen venu chercher un logement en France, voici un répertoire
+          complet des solutions de logement social et privé.
+        </p>
+        <p class="note">
+          Ce répertoire reprend le <em>Guide du logement 2024-2025</em>, centré
+          sur Nice (06000). Les plateformes nationales (CROUS, Se Loger,
+          Leboncoin...) fonctionnent partout en France ; pour les adresses
+          locales (résidences, foyers, auberges), recherchez l'équivalent dans
+          votre ville si vous n'étudiez pas à Nice.
+        </p>
+      </div>
+      <!-- https://monlogementetudiant.beta.gouv.fr/trouver-un-logement-etudiant/ville-->
+    </div>
+
+    <nav class="logement-subnav" aria-label="Sections logement">
+      <a href="#logements-etudiants">Logements étudiants</a>
+      <a href="#logements-prives">Logements privés</a>
+      <a href="#cohabitation">Cohabitation intergénérationnelle</a>
+      <a href="#habitat-jeunes">Résidences Habitat Jeunes</a>
+      <a href="#residences-sociales">Résidences sociales</a>
+      <a href="#foyers-jeunes-travailleurs">Foyers Jeunes Travailleurs</a>
+      <a href="#auberges-jeunesse">Auberges de jeunesse</a>
+      <a href="#lexique">Lexique</a>
+    </nav>
+
+    <section id="logements-etudiants" class="section-block">
+      <h2>Logements étudiants</h2>
+      <p class="section-note">
+        Logement social (résidences CROUS et conventionnées) et résidences
+        privées dédiées aux étudiants.
+      </p>
+      <div class="doc-requirements">
+        <h3>Documents généralement demandés</h3>
+        <ul>
+          <li>
+            Pièce d'identité (CNI, passeport) + visa étudiant ou titre de séjour
+            pour les étudiants étrangers
+          </li>
+          <li>Certificat de scolarité ou attestation d'inscription</li>
+          <li>
+            Avis d'imposition (le vôtre, ou celui de vos parents/tuteurs), ou
+            attestation sur l'honneur d'absence de revenus imposables si vous ne
+            pouvez pas le fournir
+          </li>
+          <li>RIB (relevé d'identité bancaire)</li>
+          <li>
+            Numéro de Dossier Social Étudiant (DSE) pour une demande de
+            résidence CROUS ou de bourse
+          </li>
+          <li>
+            Garant en France ou attestation Garantie Visale (souvent exigée en
+            résidence privée)
+          </li>
+        </ul>
+      </div>
+      <div class="listing-grid">
+        <div class="listing-card">
+          <h3>Résidences CROUS</h3>
+          <p>
+            Logements individuels ou en colocation. Priorité aux étudiants
+            boursiers ou en Master 2.
+          </p>
+          <a
+            class="listing-link"
+            href="https://trouverunlogement.lescrous.fr/"
+            target="_blank"
+            rel="noopener"
+            >trouverunlogement.lescrous.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Kolocation à Projets Solidaires (AFEV)</h3>
+          <p>
+            Cohabitation contre services. Formulaire à remplir directement sur
+            le site.
+          </p>
+          <p class="listing-meta">
+            Contacts (agence Nice) : 04.89.15.24.60 — nice@afev.org
+          </p>
+          <a
+            class="listing-link"
+            href="https://afev.org/"
+            target="_blank"
+            rel="noopener"
+            >afev.org →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Lokaviz</h3>
+          <p>
+            Plateforme de recherche de logement (tout type). Connexion à Mes
+            Services Étudiants obligatoire.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.lokaviz.fr/"
+            target="_blank"
+            rel="noopener"
+            >lokaviz.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Nexity Studéa</h3>
+          <p>
+            Résidences privées avec logements individuels. Garant obligatoire.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.nexity-studea.com/"
+            target="_blank"
+            rel="noopener"
+            >nexity-studea.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Studyrama</h3>
+          <p>Résidences privées avec logements individuels ou en colocation.</p>
+          <a
+            class="listing-link"
+            href="https://logement.studyrama.com/"
+            target="_blank"
+            rel="noopener"
+            >logement.studyrama.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Les Estudines</h3>
+          <p>
+            Résidences privées avec logements individuels ou en colocation.
+            Priorité aux étudiants, puis aux jeunes travailleurs.
+          </p>
+          <p class="listing-meta">Contacts : 09.69.39.08.98</p>
+          <a
+            class="listing-link"
+            href="https://www.estudines.com/"
+            target="_blank"
+            rel="noopener"
+            >estudines.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Adele</h3>
+          <p>
+            Plateforme de recherche de logement en résidence étudiante. Un
+            garant peut être requis.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.adele.org/"
+            target="_blank"
+            rel="noopener"
+            >adele.org →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Studapart</h3>
+          <p>
+            Plateforme de recherche de logement (tout type) en résidence ou chez
+            un particulier.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.studapart.com/"
+            target="_blank"
+            rel="noopener"
+            >studapart.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Etuloge</h3>
+          <p>
+            Plateforme de recherche de logement (tout type) chez un particulier.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.etuloge.fr/"
+            target="_blank"
+            rel="noopener"
+            >etuloge.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Student Factory</h3>
+          <p>Résidence privée avec logements individuels.</p>
+          <a
+            class="listing-link"
+            href="https://www.student-factory.com/"
+            target="_blank"
+            rel="noopener"
+            >student-factory.com →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="logements-prives" class="section-block">
+      <h2>Logements privés</h2>
+      <p class="section-note">
+        Annonces immobilières classiques, entre particuliers ou via des agences,
+        avec ou sans garant.
+      </p>
+      <div class="doc-requirements">
+        <h3>Documents généralement demandés</h3>
+        <ul>
+          <li>
+            Pièce d'identité en cours de validité (CNI, passeport, titre de
+            séjour)
+          </li>
+          <li>
+            Justificatif de domicile actuel (quittance de loyer, attestation
+            d'hébergement...)
+          </li>
+          <li>
+            Justificatif de situation professionnelle (contrat de travail,
+            certificat de scolarité...)
+          </li>
+          <li>
+            Justificatif de ressources (3 derniers bulletins de salaire, bourse,
+            avis d'imposition, attestation Visale...)
+          </li>
+          <li>
+            Pour le garant : les mêmes justificatifs, ou l'attestation Garantie
+            Visale si vous n'avez pas de garant physique en France
+          </li>
+        </ul>
+        <p class="doc-note">
+          Le décret n°2015-1437 (loi Alur) fixe la liste légale des pièces
+          exigibles : un propriétaire ne peut demander qu'un seul document par
+          catégorie (sauf pour les ressources) et ne peut pas exiger un RIB ou
+          un chèque avant la signature du bail — méfiez-vous des annonces qui le
+          demandent trop tôt.
+        </p>
+      </div>
+      <div class="listing-grid">
+        <div class="listing-card">
+          <h3>Se Loger</h3>
+          <p>Plateforme de recherche de logements individuels.</p>
+          <a
+            class="listing-link"
+            href="https://www.seloger.com/"
+            target="_blank"
+            rel="noopener"
+            >seloger.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Paru Vendu</h3>
+          <p>
+            Plateforme de recherche de logements individuels. Garant
+            obligatoire.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.paruvendu.fr/"
+            target="_blank"
+            rel="noopener"
+            >paruvendu.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Pap</h3>
+          <p>
+            Plateforme de recherche de logements individuels (entre
+            particuliers).
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.pap.fr/"
+            target="_blank"
+            rel="noopener"
+            >pap.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Fnaim</h3>
+          <p>
+            Plateforme de recherche de logements individuels. Garant préférable,
+            voire obligatoire.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.fnaim.fr/"
+            target="_blank"
+            rel="noopener"
+            >fnaim.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Bien'ici</h3>
+          <p>Plateforme de recherche de logements individuels.</p>
+          <a
+            class="listing-link"
+            href="https://www.bienici.com/"
+            target="_blank"
+            rel="noopener"
+            >bienici.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>A vendre ou a Louer</h3>
+          <p>Plateforme de recherche de logements individuels.</p>
+          <a
+            class="listing-link"
+            href="https://www.avendreoualouer.fr/"
+            target="_blank"
+            rel="noopener"
+            >avendreoualouer.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Leboncoin</h3>
+          <p>Plateforme de recherche de logements (tout type).</p>
+          <a
+            class="listing-link"
+            href="https://www.leboncoin.fr/"
+            target="_blank"
+            rel="noopener"
+            >leboncoin.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Facebook Marketplace</h3>
+          <p>Plateforme de recherche de logements (tout type).</p>
+          <a
+            class="listing-link"
+            href="https://www.facebook.com/marketplace"
+            target="_blank"
+            rel="noopener"
+            >facebook.com/marketplace →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>La carte des colocs</h3>
+          <p>Plateforme de recherche de logements en colocation.</p>
+          <a
+            class="listing-link"
+            href="https://www.lacartedescolocs.fr/"
+            target="_blank"
+            rel="noopener"
+            >lacartedescolocs.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Appartager</h3>
+          <p>
+            Plateforme de recherche de logements en colocation. Certaines
+            annonces sont réservées aux membres premium.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.appartager.com/"
+            target="_blank"
+            rel="noopener"
+            >appartager.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Colocation adulte</h3>
+          <p>
+            Plateforme de recherche de logements en colocation ou de
+            cohabitation contre services.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.colocation-adulte.fr/"
+            target="_blank"
+            rel="noopener"
+            >colocation-adulte.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Jinka</h3>
+          <p>
+            Application mobile qui regroupe toutes les annonces de logement
+            (plus de 5000 sites immobiliers) d'après vos préférences.
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.jinka.fr/"
+            target="_blank"
+            rel="noopener"
+            >jinka.fr →</a
+          >
+        </div>
+      </div>
+      <p class="section-note" style="margin-top: 2rem">
+        Pour un logement privé sans garant en France, pensez à la
+        <strong>garantie Visale</strong> (voir le
+        <a href="#lexique">lexique</a> ci-dessous) via
+        <a href="https://www.visale.fr/" target="_blank" rel="noopener"
+          >visale.fr</a
+        >.
+      </p>
+    </section>
+
+    <section id="cohabitation" class="section-block">
+      <h2>Cohabitation intergénérationnelle</h2>
+      <p class="section-note">
+        Logement à moindre coût chez une personne âgée, en échange d'une
+        présence ou d'une aide dans la vie quotidienne.
+      </p>
+      <div class="doc-requirements">
+        <h3>Documents généralement demandés</h3>
+        <ul>
+          <li>Pièce d'identité</li>
+          <li>Certificat de scolarité (souvent réservé aux étudiants)</li>
+          <li>Lettre de motivation</li>
+          <li>
+            Formulaire de candidature à remplir sur le site de l'association
+          </li>
+          <li>
+            Frais de dossier (variables selon la structure, environ 10 à 30 €)
+          </li>
+        </ul>
+      </div>
+      <div class="listing-grid">
+        <div class="listing-card">
+          <h3>Toit en Tandem (Cohabilis)</h3>
+          <p>
+            Cohabitation contre services. Réservé aux moins de 30 ans.
+            Formulaire à remplir sur le site.
+          </p>
+          <p class="listing-meta">
+            Contacts : 07.9.61.82.49 — contact@toitentandem.fr
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.cohabilis.org/formulaire-jeunes"
+            target="_blank"
+            rel="noopener"
+            >cohabilis.org/formulaire-jeunes →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Ensemble 2 générations</h3>
+          <p>
+            Cohabitation contre services. Réservé aux moins de 30 ans.
+            Formulaire à remplir sur le site (10 € de frais).
+          </p>
+          <p class="listing-meta">
+            Contacts : 06.89.69.03.31 — nice@ensemble2generations.fr
+          </p>
+          <a
+            class="listing-link"
+            href="https://ensemble2generations.fr/agence/nice"
+            target="_blank"
+            rel="noopener"
+            >ensemble2generations.fr/agence/nice →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Habitat et Humanisme</h3>
+          <p>
+            Cohabitation contre services. Réservé aux étudiants. Dossier et
+            lettre de motivation à envoyer par courrier.
+          </p>
+          <p class="listing-meta">
+            Adresse : 136 boulevard des Jardiniers, 06200 Nice<br />
+            Contacts : 06.68.44.14.65 — v.imbert@habitat-humanisme.org
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.habitat-humanisme.org/"
+            target="_blank"
+            rel="noopener"
+            >habitat-humanisme.org →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="habitat-jeunes" class="section-block">
+      <h2>Résidences Habitat Jeunes</h2>
+      <p class="section-note">
+        Résidences pour jeunes de 16 à 30 ans en études ou en emploi, disposant
+        de ressources minimales.
+      </p>
+      <div class="doc-requirements">
+        <h3>Documents généralement demandés</h3>
+        <ul>
+          <li>Pièce d'identité ou titre de séjour en cours de validité</li>
+          <li>
+            Justificatif de ressources (contrat de travail, alternance, promesse
+            d'embauche, certificat de scolarité, attestation de bourse, ou
+            justificatif France Travail)
+          </li>
+          <li>Garantie Visale (souvent obligatoire)</li>
+          <li>RIB</li>
+          <li>
+            Avis d'imposition, ou attestation sur l'honneur d'absence de revenus
+          </li>
+        </ul>
+      </div>
+      <div class="listing-grid">
+        <div class="listing-card">
+          <h3>API Provence "Les Nations"</h3>
+          <p>
+            Logements individuels. Entre 16 et 30 ans. Garantie Visale
+            obligatoire. Avoir des ressources égales aux minimas sociaux.
+          </p>
+          <p class="listing-meta">
+            Adresse : 25 avenue Durante, 06000 Nice<br />
+            Contacts : 04.93.85.87.74
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.apiprovence.org/"
+            target="_blank"
+            rel="noopener"
+            >apiprovence.org →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Espace Mimont</h3>
+          <p>
+            Logements individuels ou en colocation. Entre 16 et 30 ans. Être
+            étudiant ou en activité professionnelle.
+          </p>
+          <p class="listing-meta">
+            Adresse : 5 rue de Mimont, 06400 Cannes<br />
+            Contacts : 04.92.99.77.77 — contact@espacesmimont.org
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.apiprovence.org/"
+            target="_blank"
+            rel="noopener"
+            >apiprovence.org →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="residences-sociales" class="section-block">
+      <h2>Résidences sociales</h2>
+      <p class="section-note">
+        Résidences Adoma (groupe CDC Habitat), acceptées sous conditions de
+        ressources.
+      </p>
+      <div class="doc-requirements">
+        <h3>Documents généralement demandés</h3>
+        <ul>
+          <li>
+            Numéro unique de demande de logement social (si vous en avez déjà
+            un)
+          </li>
+          <li>
+            Pièce d'identité, passeport ou titre de séjour en cours de validité
+          </li>
+          <li>
+            Justificatif de ressources mensuelles (salaires, allocations,
+            pensions...)
+          </li>
+          <li>Avis d'imposition ou de non-imposition (N-1 et N-2)</li>
+          <li>
+            Justificatifs complémentaires selon votre situation (précarité,
+            handicap, menace d'expulsion...)
+          </li>
+        </ul>
+        <p class="doc-note">
+          Les pièces sont présentées lors de l'entretien avec le responsable de
+          résidence, après la saisie en ligne de votre demande.
+        </p>
+      </div>
+      <div class="listing-grid">
+        <div class="listing-card">
+          <h3>Résidences Adoma</h3>
+          <p>
+            Résidences privées avec logements individuels. Demande à faire
+            directement sur le site. Acceptation sous conditions de ressources
+            (plafonds à ne pas dépasser).
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.adoma.cdc-habitat.fr/"
+            target="_blank"
+            rel="noopener"
+            >adoma.cdc-habitat.fr →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Résidence Nicea-Bleuet</h3>
+          <p class="listing-meta">
+            Adresse : 273 boulevard du Mercantour, 06300 Nice<br />
+            Contacts : 06.69.05.52.12
+          </p>
+        </div>
+        <div class="listing-card">
+          <h3>Résidence Nice Carabacel</h3>
+          <p class="listing-meta">
+            Adresse : 3 rue de la Gendarmerie, 06000 Nice<br />
+            Contacts : 04.93.80.92.23
+          </p>
+        </div>
+        <div class="listing-card">
+          <h3>Résidence Nice Riquier</h3>
+          <p class="listing-meta">
+            Adresse : 5 rue Joseph Passeron, 06300 Nice<br />
+            Contacts : 04.93.89.90.99
+          </p>
+        </div>
+        <div class="listing-card">
+          <h3>Résidence Nice Riquier (av. Raybaud)</h3>
+          <p class="listing-meta">
+            Adresse : 59 avenue Joseph Raybaud, 06000 Nice<br />
+            Contacts : 04.93.92.24.87
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="foyers-jeunes-travailleurs" class="section-block">
+      <h2>Foyers Jeunes Travailleurs</h2>
+      <p class="section-note">
+        Logement temporaire pour jeunes de 16 à 30 ans en activité
+        professionnelle (contrat de travail, apprentissage...).
+      </p>
+      <div class="doc-requirements">
+        <h3>Documents généralement demandés</h3>
+        <ul>
+          <li>
+            Pièce d'identité, récépissé ou titre de séjour en cours de validité
+            (recto-verso)
+          </li>
+          <li>
+            Justificatif d'activité (contrat de travail, promesse d'embauche,
+            convention de stage, certificat de scolarité, notification France
+            Travail...)
+          </li>
+          <li>
+            Justificatif de ressources (bulletin de salaire, attestation de
+            bourse...)
+          </li>
+          <li>
+            Avis d'imposition ou de non-imposition (N-2), ou attestation sur
+            l'honneur en l'absence de revenus
+          </li>
+          <li>Garantie Visale (obligatoire dans plusieurs foyers)</li>
+        </ul>
+      </div>
+      <div class="listing-grid">
+        <div class="listing-card">
+          <h3>Montjoye "Espace Soleil"</h3>
+          <p>
+            Logements individuels ou en colocation. Garantie Visale obligatoire.
+            Dossier à déposer en présentiel. Si le dossier est accepté : 70 € de
+            frais d'inscription.
+          </p>
+          <p class="listing-meta">
+            Adresse : 55 boulevard Louis Braille, 06300 Nice<br />
+            Contacts : 04.93.56.54.85 — espace.soleil@montjoye.org
+          </p>
+          <a
+            class="listing-link"
+            href="https://montjoye.org/"
+            target="_blank"
+            rel="noopener"
+            >montjoye.org →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>API Provence "Campus Sud"</h3>
+          <p>
+            Logements individuels. Garantie Visale obligatoire. Dossier à
+            envoyer par courrier. Si le dossier est accepté : 37 € de frais
+            d'inscription.
+          </p>
+          <p class="listing-meta">
+            Adresse : 11 avenue Simone Veil, 06200 Nice<br />
+            Contacts : 04.22.13.81.76 — nice.campussud@apiprovence.org
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.apiprovence.org/"
+            target="_blank"
+            rel="noopener"
+            >apiprovence.org →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="auberges-jeunesse" class="section-block">
+      <h2>Auberges de jeunesse</h2>
+      <p class="section-note">
+        Solution de logement de très courte durée, prix à la nuit et dortoirs
+        collectifs.
+      </p>
+      <div class="doc-requirements">
+        <h3>Documents généralement demandés</h3>
+        <ul>
+          <li>Pièce d'identité (CNI ou passeport) à présenter à l'arrivée</li>
+          <li>Réservation confirmée (numéro de réservation)</li>
+          <li>Moyen de paiement pour régler le séjour</li>
+        </ul>
+      </div>
+      <div class="listing-grid">
+        <div class="listing-card">
+          <h3>Les Camélias (HI France)</h3>
+          <p>Dortoirs à partir de 21,90 €/nuit.</p>
+          <p class="listing-meta">
+            Adresse : 3 rue Spitaliéri, 06000 Nice<br />
+            Contacts : 04.93.62.15.24 — nice-les-camelias@hifrance.org
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.hifrance.org/auberges-de-jeunesse/nice-les-camelias/"
+            target="_blank"
+            rel="noopener"
+            >hifrance.org/auberges-de-jeunesse →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Villa Hostels</h3>
+          <p>Dortoirs à partir de 26,95 €/nuit.</p>
+          <p class="listing-meta">
+            Adresse : 6 rue Sacha Guitry, 06000 Nice<br />
+            Contacts : 04.93.16.13.45 — info@villahostels.com
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.villahostels.com/"
+            target="_blank"
+            rel="noopener"
+            >villahostels.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Ozz Hostels</h3>
+          <p>Dortoirs à partir de 35 €/nuit.</p>
+          <p class="listing-meta">
+            Adresse : 18 rue Paganini, 06000 Nice<br />
+            Contacts : 04.93.88.48.83
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.hotel-ozz.com/"
+            target="_blank"
+            rel="noopener"
+            >hotel-ozz.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Antares Hostels</h3>
+          <p>Dortoirs à partir de 21 €/nuit.</p>
+          <p class="listing-meta">
+            Adresse : 5 avenue Thiers, 06000 Nice<br />
+            Contacts : 04.93.88.22.87 — hot1antares@gmail.com
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.antareshostel.com/"
+            target="_blank"
+            rel="noopener"
+            >antareshostel.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Open House Hostel</h3>
+          <p>Dortoirs à partir de 35 €/nuit.</p>
+          <p class="listing-meta">
+            Adresse : 6 rue Dr Jacques Guidoni, 06000 Nice<br />
+            Contacts : 06.76.10.74.72
+          </p>
+          <a
+            class="listing-link"
+            href="https://open-house-hostel.go-nice-hotels.com/"
+            target="_blank"
+            rel="noopener"
+            >open-house-hostel.go-nice-hotels.com →</a
+          >
+        </div>
+        <div class="listing-card">
+          <h3>Baccarat Hostel</h3>
+          <p>Dortoirs à partir de 25 €/nuit.</p>
+          <p class="listing-meta">
+            Adresse : 39 rue d'Angleterre, 06000 Nice<br />
+            Contacts : 04.93.88.35.73 — baccarat5communication@gmail.com
+          </p>
+          <a
+            class="listing-link"
+            href="https://www.baccarathostel.com/"
+            target="_blank"
+            rel="noopener"
+            >baccarathostel.com →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="lexique" class="section-block">
+      <h2>Lexique</h2>
+      <p class="section-note">
+        Les termes utiles pour comprendre les offres ci-dessus.
+      </p>
+      <dl class="lexique-grid">
+        <dt>Garant</dt>
+        <dd>
+          Personne s'engageant, auprès du propriétaire ou de l'organisme
+          hébergeur, à payer les dettes locatives (loyer, charges...) à la place
+          du locataire si ce dernier venait à y manquer.
+        </dd>
+        <dt>Garantie Visale</dt>
+        <dd>
+          Dispositif permettant aux moins de 30 ans de bénéficier gratuitement
+          d'un garant pour couvrir les impayés (loyers, caution), avant de
+          proposer au locataire un plan de remboursement adapté à sa situation
+          financière.
+        </dd>
+        <dt>Cohabitation contre services</dt>
+        <dd>
+          Logement à moindre coût en chambre contre service rendu au
+          propriétaire (aide à la personne, babysitting...).
+        </dd>
+        <dt>Kolocation à Projets Solidaires</dt>
+        <dd>
+          Dispositif de l'association AFEV permettant un logement en colocation
+          à moindre coût contre 4h/semaine de bénévolat dans un quartier
+          prioritaire.
+        </dd>
+        <dt>Cohabitation intergénérationnelle</dt>
+        <dd>
+          Logement à moindre coût chez une personne âgée dans le besoin, contre
+          une aide dans sa vie quotidienne (courses...).
+        </dd>
+        <dt>Résidence habitat jeunes</dt>
+        <dd>
+          Résidence pour jeunes entre 16 et 30 ans en cours d'études ou d'emploi
+          et disposant de ressources minimales.
+        </dd>
+        <dt>Foyers Jeunes Travailleurs</dt>
+        <dd>
+          Solution de logement temporaire pour jeunes de 16 à 30 ans en activité
+          professionnelle (contrat de travail, apprentissage...).
+        </dd>
+        <dt>Auberge de jeunesse</dt>
+        <dd>
+          Solution de logement de très courte durée proche d'un hôtel, prix à la
+          nuit et dortoirs collectifs.
+        </dd>
+      </dl>
+    </section>
+
+    <footer class="site-footer">
+      <p>
+        Guide de l'Étudiant — informations utiles pour réussir votre
+        installation en France.
+      </p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>
